@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сергей Игнатов](https://up.htmlacademy.ru/adaptive/23/user/1813461).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
