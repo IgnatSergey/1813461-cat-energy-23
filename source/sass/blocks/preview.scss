@@ -1,0 +1,30 @@
+.preview {
+  text-align: center;
+  background-image: url("../../img/background_cat.png");
+  background-repeat: no-repeat;
+  color: $basic-white;
+
+  @include container();
+  padding-top: 27px;
+  padding-bottom: 22px;
+}
+
+.preview__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include font-oswald(36px, 36px, 400);
+}
+
+.preview__slogan {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-oswald(14px, 14px, 400);
+}
+
+.preview__nutrition-can-image {
+  display: block;
+  margin-bottom: 3px;
+}

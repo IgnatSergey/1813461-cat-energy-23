@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" />
   <title>Кэт энерджи</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image-simple" src="img/logo-simple.svg" width="34" height="38"
+      <img class="page-header__logo-image-simple" src="img/logo_simple.svg" width="34" height="38"
         alt="Логотип кэт энерджи">
-      <img class="page-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="текст кэт энерджи">
+      <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18" alt="текст кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -120,9 +121,9 @@
       <p class="example__expense">Затраты на питание: 15 000 руб.</p>
       <div class="example__slider slider">
         <div class="slider__images">
-          <img class="example__cat-image slider__item" src="img/before-light.png"
+          <img class="example__cat-image slider__item" src="img/before_light.png"
             alt="Бело-серая кошка с избыточным весом">
-          <img class="example__cat-image slider__item" src="img/after-light.png" alt="Бело-серая стройная кошка">
+          <img class="example__cat-image slider__item" src="img/after_light.png" alt="Бело-серая стройная кошка">
         </div>
         <div class="example__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">было</button>
@@ -133,8 +134,10 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <iframe class="contacts__map"></iframe>
     </section>
 
@@ -142,7 +145,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <img class="page-footer__logo-text" src="img/logo-text.svg" width="128" height="24" alt="Логотип кэт энерджи">
+      <img class="page-footer__logo-text" src="img/logo_text.svg" width="128" height="24" alt="Логотип кэт энерджи">
     </div>
     <div class="page-footer__social social">
       <ul class="social__list">

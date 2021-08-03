@@ -1,0 +1,14 @@
+.page-form {
+  padding-top: 27px;
+}
+
+.page-form__title {
+  @include container();
+  margin-bottom: 37px;
+
+  @include font-oswald(36px, 36px, 400);
+}
+
+.page-form .contacts {
+  background-color: $basic-background;
+}

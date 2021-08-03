@@ -1,0 +1,12 @@
+.contacts__wrapper {
+  @include container();
+}
+
+.contacts__text {
+  @include font-oswald(16px, 20px, 400);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include font-arial(14px, 20px, 400);
+}

@@ -1,0 +1,16 @@
+.page-footer {
+  @include container();
+  background-color: $basic-background;
+}
+
+.page-footer__logo {
+  text-align: center;
+}
+
+.social__list {
+  @include non-list();
+}
+
+.copyright__link-text {
+  @include font-arial(16px, 18px, 400);
+}

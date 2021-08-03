@@ -1,0 +1,50 @@
+.program-selection {
+  @include container();
+}
+
+.program-selection__intro {
+  margin: 0;
+  margin-bottom: 39px;
+  width: 230px;
+
+  @include font-oswald(14px, 18px, 400);
+  text-transform: uppercase;
+}
+
+.program-selection__cat-data,
+.program-selection__type-program,
+.program-selection__owner-data,
+.program-selection__comment,
+.program-selection__addition {
+  margin: 0;
+  padding: 0;
+}
+
+.program-selection__type-program-list,
+.program-selection__addition-item {
+  @include non-list();
+}
+
+.program-selection__legend {
+  @include font-oswald(24px, 26px, 400);
+}
+
+.program-selection__label {
+  @include font-oswald();
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.program-selection__type-program .program-selection__label {
+  color: $special-dark-grey;
+}
+
+.program-selection__addition .program-selection__label {
+  color: $basic-black;
+}
+
+.program-selection__note {
+  margin: 0;
+  text-align: center;
+  @include font-arial(14px, 16px, 400);
+}

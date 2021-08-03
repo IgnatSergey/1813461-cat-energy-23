@@ -1,0 +1,5 @@
+.slider__toggle {
+  text-transform: uppercase;
+
+  @include font-oswald(16px, 20px, 400);
+}
