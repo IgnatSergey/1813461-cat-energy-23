@@ -46,5 +46,6 @@
 .program-selection__note {
   margin: 0;
   text-align: center;
+
   @include font-arial(14px, 16px, 400);
 }
