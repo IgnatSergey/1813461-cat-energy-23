@@ -1,12 +1,16 @@
-.contacts__wrapper {
-  @include container();
-}
-
 .contacts__text {
   @include font-oswald(16px, 20px, 400);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__address {
   @include font-arial(14px, 20px, 400);
+}
+
+.contacts__map {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

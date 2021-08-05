@@ -1,13 +1,17 @@
 .preview {
   text-align: center;
+  background-position: center 0;
+  color: $basic-white;
+}
+
+.preview .container {
   background-image: url("../../img/background_cat.png");
   background-repeat: no-repeat;
-  color: $basic-white;
-
-  @include container();
+  background-size: contain;
   padding-top: 27px;
   padding-bottom: 22px;
 }
+
 
 .preview__title {
   margin: 0;

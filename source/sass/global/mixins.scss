@@ -12,12 +12,6 @@
   font-weight: $weight;
 }
 
-@mixin container() {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 @mixin non-list() {
   margin: 0;
   padding: 0;

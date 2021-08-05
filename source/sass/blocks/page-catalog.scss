@@ -3,7 +3,6 @@
 }
 
 .page-catalog__title {
-  @include container();
   margin-bottom: 41px;
 
   @include font-oswald(36px, 36px, 400);
