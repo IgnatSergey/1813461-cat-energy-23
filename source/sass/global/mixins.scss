@@ -1,0 +1,19 @@
+@mixin font-oswald($size: 16px, $height: 18px, $weight: 400) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin font-arial($size: 14px, $height: 18px, $weight: 400) {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin non-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

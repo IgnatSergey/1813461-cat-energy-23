@@ -1,0 +1,36 @@
+.example {
+  background-color: $example-background-color;
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include font-oswald(36px, 40px, 400);
+}
+
+.example__description {
+  @include font-arial();
+}
+
+.example__list {
+  @include non-list();
+}
+
+.example__number {
+  @include font-oswald(24px, 24px, 400);
+}
+
+.example__definition {
+  @include font-arial(12px, 12px, 400);
+}
+
+.example__expense {
+  margin-top: 25px;
+  margin-bottom: 42px;
+  text-align: center;
+
+  @include font-oswald(14px, 20px, 400);
+}

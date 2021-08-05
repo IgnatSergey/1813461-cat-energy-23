@@ -1,0 +1,47 @@
+.nutrition-programs__list {
+  @include non-list();
+}
+
+.nutrition-programs__item {
+  background-color: $basic-background;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+}
+
+.nutrition-programs__item--diet {
+  background-image: url("../../img/cat_back_diet.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 24px;
+}
+
+.nutrition-programs__item--weight {
+  background-image: url("../../img/cat_back_weight.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+}
+
+.nutrition-programs__title {
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+
+  @include font-oswald(24px, 37px, 400);
+}
+
+.nutrition-programs__description {
+  margin: 0;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+
+  @include font-arial();
+}
+
+.nutrition-programs__link {
+  text-transform: uppercase;
+
+  @include font-oswald(16px, 16px, 400);
+}

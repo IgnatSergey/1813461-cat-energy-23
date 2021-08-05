@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+//Global
+
+@import "global/normalize";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+
+//Blocks
+
+@import "blocks/body.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/preview.scss";
+@import "blocks/button.scss";
+@import "blocks/nutrition-programs.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/goods-additional.scss";
+@import "blocks/offer.scss";
+@import "blocks/page-form.scss";
+@import "blocks/program-selection.scss";

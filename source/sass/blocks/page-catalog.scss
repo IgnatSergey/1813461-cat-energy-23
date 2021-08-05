@@ -1,0 +1,13 @@
+.page-catalog {
+  padding-top: 27px;
+}
+
+.page-catalog__title {
+  margin-bottom: 41px;
+
+  @include font-oswald(36px, 36px, 400);
+}
+
+.page-catalog .contacts {
+  background-color: $basic-background;
+}

@@ -1,0 +1,31 @@
+.offer {
+  text-align: center;
+  color: $basic-white;
+  margin-top: 36px;
+  margin-bottom: 35px;
+}
+
+.offer .container {
+  background-image: url("../../img/background_cat_offer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 65px;
+  padding-bottom: 78px;
+}
+
+.offer__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__text {
+  margin: 0;
+  margin-top: 48px;
+  width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font-arial(16px, 20px, 400);
+}

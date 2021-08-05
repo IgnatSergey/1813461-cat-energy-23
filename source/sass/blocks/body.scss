@@ -1,0 +1,7 @@
+.page__body {
+  margin: 0;
+  padding: 0;
+  background-color: $basic-white;
+
+  @include font-oswald();
+}
