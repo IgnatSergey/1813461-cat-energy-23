@@ -2,6 +2,10 @@
   text-align: center;
   background-position: center 0;
   color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    height: 580px;
+  }
 }
 
 .preview .container {
@@ -10,14 +14,23 @@
   background-size: contain;
   padding-top: 27px;
   padding-bottom: 22px;
-}
 
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    position: relative;
+  }
+}
 
 .preview__title {
   margin: 0;
   margin-bottom: 25px;
 
   @include font-oswald(36px, 36px, 400);
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $basic-black;
+  }
 }
 
 .preview__slogan {
@@ -26,9 +39,38 @@
   margin-bottom: 29px;
 
   @include font-oswald(14px, 14px, 400);
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $basic-black;
+  }
 }
 
 .preview__nutrition-can-image {
   display: block;
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 490px;
+    top: 10px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.preview .button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: absolute;
+    left: 91px;
+    top: 140px;
+  }
 }
