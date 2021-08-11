@@ -2,12 +2,20 @@
   background-color: $basic-background;
 }
 
+.page-footer__grid {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   text-align: center;
 }
 
 .social__list {
   @include non-list();
+  display: flex;
 }
 
 .copyright__link-text {

@@ -1,5 +1,10 @@
+
 .nutrition-programs__list {
   @include non-list();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .nutrition-programs__item {
@@ -25,8 +30,8 @@
 
 .nutrition-programs__title {
   margin: 0;
-  margin-left: 70px;
   margin-bottom: 29px;
+  padding-left: 70px;
   text-transform: uppercase;
 
   @include font-oswald(24px, 37px, 400);

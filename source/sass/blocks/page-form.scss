@@ -3,6 +3,7 @@
 }
 
 .page-form__title {
+  margin: 0;
   margin-bottom: 37px;
 
   @include font-oswald(36px, 36px, 400);
