@@ -18,6 +18,7 @@
 
 .contacts__address {
   @include font-arial(14px, 20px, 400);
+  margin: 0;
 }
 
 .contacts__map {

@@ -2,7 +2,7 @@
   background-color: $basic-background;
 }
 
-.page-footer .container {
+.page-footer__grid {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

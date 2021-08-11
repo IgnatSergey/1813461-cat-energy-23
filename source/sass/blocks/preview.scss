@@ -1,29 +1,46 @@
 .preview {
   text-align: center;
-  background-position: center 0;
   color: $basic-white;
-
-  @media (min-width: $desktop-width) {
-    height: 580px;
-  }
-}
-
-.preview .container {
-  background-image: url("../../img/background_cat.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 27px;
-  padding-bottom: 22px;
+  position: relative;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    background-image: none;
-    position: relative;
+    text-align: left;
+    padding-bottom: 526px;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 302px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../../img/background_cat.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: $background-preview;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      height: 694px;
+      width: 70%;
+      top: -80px;
+      left: 50%;
+    }
   }
 }
 
 .preview__title {
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 27px;
 
   @include font-oswald(36px, 36px, 400);
 
@@ -43,6 +60,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     color: $basic-black;
+    margin-bottom: 49px;
   }
 }
 
@@ -53,10 +71,15 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: absolute;
+    left: 91px;
+    top: 100px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     left: 490px;
     top: 10px;
     width: 552px;
@@ -67,10 +90,5 @@
 .preview .button {
   @media (min-width: $tablet-width) {
     width: 244px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    position: absolute;
-    left: 91px;
-    top: 140px;
   }
 }

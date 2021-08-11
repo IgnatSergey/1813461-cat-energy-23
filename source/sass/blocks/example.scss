@@ -4,7 +4,7 @@
   padding-bottom: 31px;
 }
 
-.example .container {
+.example__grid {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +29,7 @@
 
 .example__description {
   @include font-arial();
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: -1/1;
@@ -62,6 +63,7 @@
 }
 
 .example__expense {
+  margin: 0;
   margin-top: 25px;
   margin-bottom: 42px;
   text-align: center;

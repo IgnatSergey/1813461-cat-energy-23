@@ -14,13 +14,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 500px;
-    justify-content: flex-end;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    width: 900px;
+    min-width: 440px;
     justify-content: flex-end;
   }
 }

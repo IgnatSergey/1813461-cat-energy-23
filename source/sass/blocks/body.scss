@@ -4,10 +4,4 @@
   background-color: $basic-white;
 
   @include font-oswald();
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../img/background_cat_full.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
 }
