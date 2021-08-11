@@ -3,18 +3,42 @@
   color: $basic-white;
   margin-top: 36px;
   margin-bottom: 35px;
-  padding-top: 65px;
-  padding-bottom: 78px;
+}
+
+.offer__grid {
   background-image: url("../../img/background_cat_offer.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  padding-top: 58px;
+  padding-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 78px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: auto;
+  }
 }
 
 .offer__image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .offer__text {
@@ -25,4 +49,13 @@
   margin-right: auto;
 
   @include font-arial(16px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

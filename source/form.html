@@ -86,15 +86,17 @@
           </fieldset>
           <fieldset class="program-selection__owner-data">
             <legend class="program-selection__legend">Контактные данные (владельца кота)</legend>
-            <div class="program-selection__input-container">
-              <label class="program-selection__label" for="owner-email">E-mail:*</label>
-              <input class="program-selection__input" id="owner-email" type="email" name="email"
-                placeholder="kuklachev@gmail.com" required />
-            </div>
-            <div class="program-selection__input-container">
-              <label class="program-selection__label" for="owner-phone">Телефон:*</label>
-              <input class="program-selection__input" id="owner-phone" type="tel" name="phone"
-                placeholder="8 (960) 900-60-90" required />
+            <div class="program-selection__owner-data-grid">
+              <div class="program-selection__input-container">
+                <label class="program-selection__label" for="owner-email">E-mail:*</label>
+                <input class="program-selection__input" id="owner-email" type="email" name="email"
+                  placeholder="kuklachev@gmail.com" required />
+              </div>
+              <div class="program-selection__input-container">
+                <label class="program-selection__label" for="owner-phone">Телефон:*</label>
+                <input class="program-selection__input" id="owner-phone" type="tel" name="phone"
+                  placeholder="8 (960) 900-60-90" required />
+              </div>
             </div>
           </fieldset>
           <fieldset class="program-selection__comment">
@@ -126,9 +128,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Отправить заявку</button>
+          <div class="program-selection__button-wrapper">
+            <button class="button" type="submit">Отправить заявку</button>
+            <p class="program-selection__note">* — Обязательные поля</p>
+          </div>
         </form>
-        <p class="program-selection__note">* — Обязательные поля</p>
     </div>
     </section>
 
