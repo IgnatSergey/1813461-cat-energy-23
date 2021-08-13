@@ -42,12 +42,12 @@
   </header>
 
   <main class="page-form">
-    <div class="container">
-      <h1 class="page-form__title">Подбор программы</h1>
-      <section class="program-selection">
+    <section class="program-selection">
+      <div class="container">
+        <h1 class="program-selection__title page-form__title">Подбор программы</h1>
         <p class="program-selection__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="program-selection__cat-data">
+          <fieldset class="program-selection__fieldset">
             <legend class="visually-hidden">Данные питомца</legend>
             <div class="program-selection__input-container">
               <label class="program-selection__label" for="cat-name">Имя:*</label>
@@ -64,7 +64,7 @@
               <input class="program-selection__input" id="cat-age" type="number" name="age" placeholder="7" />
             </div>
           </fieldset>
-          <fieldset class="program-selection__type-program">
+          <fieldset class="program-selection__fieldset">
             <legend class="visually-hidden">Тип программы</legend>
             <ul class="program-selection__type-program-list">
               <li class="program-selection__type-program-item">
@@ -84,26 +84,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__owner-data">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--stretched">
             <legend class="program-selection__legend">Контактные данные (владельца кота)</legend>
-            <div class="program-selection__input-container">
-              <label class="program-selection__label" for="owner-email">E-mail:*</label>
-              <input class="program-selection__input" id="owner-email" type="email" name="email"
-                placeholder="kuklachev@gmail.com" required />
-            </div>
-            <div class="program-selection__input-container">
-              <label class="program-selection__label" for="owner-phone">Телефон:*</label>
-              <input class="program-selection__input" id="owner-phone" type="tel" name="phone"
-                placeholder="8 (960) 900-60-90" required />
+            <div class="program-selection__owner-data-grid">
+              <div class="program-selection__input-container">
+                <label class="program-selection__label" for="owner-email">E-mail:*</label>
+                <input class="program-selection__input" id="owner-email" type="email" name="email"
+                  placeholder="kuklachev@gmail.com" required />
+              </div>
+              <div class="program-selection__input-container">
+                <label class="program-selection__label" for="owner-phone">Телефон:*</label>
+                <input class="program-selection__input" id="owner-phone" type="tel" name="phone"
+                  placeholder="8 (960) 900-60-90" required />
+              </div>
             </div>
           </fieldset>
-          <fieldset class="program-selection__comment">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--stretched">
             <legend class="program-selection__legend">Комментарии</legend>
             <label class="visually-hidden" for="comment">Комментарии</label>
             <textarea class="program-selection__input" id="comment" name="about-cat"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program-selection__addition">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--stretched">
             <legend class="program-selection__legend">Дополнительно</legend>
             <ul class="program-selection__addition-list">
               <li class="program-selection__addition-item">
@@ -126,10 +128,12 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Отправить заявку</button>
+          <div class="program-selection__button-wrapper">
+            <button class="button" type="submit">Отправить заявку</button>
+            <p class="program-selection__note">* — Обязательные поля</p>
+          </div>
         </form>
-        <p class="program-selection__note">* — Обязательные поля</p>
-    </div>
+      </div>
     </section>
 
     <section class="contacts">
