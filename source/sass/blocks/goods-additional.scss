@@ -1,13 +1,13 @@
-.additional-offer-wrapper {
+.offers {
+  padding-top: 25px;
+}
+
+.offers__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
   }
-}
-
-.goods-additional {
-  padding-top: 25px;
 }
 
 .goods-additional__main-title {

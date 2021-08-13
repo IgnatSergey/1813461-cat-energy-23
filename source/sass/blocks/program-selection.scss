@@ -1,3 +1,10 @@
+.program-selection__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  @include font-oswald(36px, 36px, 400);
+}
+
 .program-selection__intro {
   margin: 0;
   margin-bottom: 39px;
@@ -15,18 +22,12 @@
   }
 }
 
-.program-selection__cat-data,
-.program-selection__type-program,
-.program-selection__owner-data,
-.program-selection__comment,
-.program-selection__addition {
+.program-selection__fieldset {
   margin: 0;
   padding: 0;
 }
 
-.program-selection__owner-data,
-.program-selection__comment,
-.program-selection__addition {
+.program-selection__fieldset--stretched {
   @media (min-width: $desktop-width) {
     grid-column: -1/1;
   }
