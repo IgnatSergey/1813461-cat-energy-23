@@ -3,10 +3,21 @@
   color: $basic-white;
   position: relative;
   margin-bottom: 22px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    min-height: 870px;
     text-align: left;
-    padding-bottom: 526px;
+    padding-top: 60px;
+    padding-left: 87px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 585px;
+    padding-top: 114px;
+    padding-left: 80px;
+    margin-bottom: 82px;
   }
 
   &::before {
@@ -32,7 +43,7 @@
       display: block;
       height: 694px;
       width: 70%;
-      top: -80px;
+      top: -119px;
       left: 50%;
     }
   }
@@ -41,12 +52,14 @@
 .preview__title {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 27px;
 
   @include font-oswald(36px, 36px, 400);
 
   @media (min-width: $tablet-width) {
-    text-align: left;
+    width: 420px;
+    margin-bottom: 41px;
+
+    @include font-oswald(60px, 60px, 400);
     color: $basic-black;
   }
 }
@@ -60,14 +73,17 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+
+    @include font-oswald(20px, 20px, 400);
     color: $basic-black;
     margin-bottom: 49px;
   }
 }
 
 .preview__nutrition-can-image {
-  display: block;
   margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -91,5 +107,9 @@
 .preview .button {
   @media (min-width: $tablet-width) {
     width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    @include font-oswald(20px, 20px, 400);
   }
 }

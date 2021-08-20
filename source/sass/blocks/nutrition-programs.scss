@@ -1,9 +1,9 @@
-
 .nutrition-programs__list {
   @include non-list();
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -14,18 +14,51 @@
   padding-right: 20px;
   padding-bottom: 22px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-right: 316px;
+    padding-bottom: 57px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-right: 51px;
+  }
 }
 
 .nutrition-programs__item--diet {
   background-image: url("../../img/cat_back_diet.svg");
   background-repeat: no-repeat;
   background-position: 22px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position: 446px 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 100px;
+    background-position: 52px 47px;
+  }
 }
 
 .nutrition-programs__item--weight {
   background-image: url("../../img/cat_back_weight.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    background-position: 412px 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
 }
 
 .nutrition-programs__title {
@@ -35,6 +68,16 @@
   text-transform: uppercase;
 
   @include font-oswald(24px, 37px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(36px, 36px, 400);
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .nutrition-programs__description {
@@ -43,10 +86,43 @@
   margin-bottom: 19px;
 
   @include font-arial();
+
+  @media (min-width: $tablet-width) {
+    @include font-arial(16px, 24px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .nutrition-programs__link {
   text-transform: uppercase;
+  position: relative;
 
   @include font-oswald(16px, 16px, 400);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 100px;
+    width: 54px;
+    height: 12px;
+    background-image: url("../../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(20px, 30px, 400);
+
+    &::after {
+      top: 9px;
+      left: 133px;
+    }
+  }
 }
