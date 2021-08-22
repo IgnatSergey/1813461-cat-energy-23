@@ -9,14 +9,12 @@
     min-height: 870px;
     text-align: left;
     padding-top: 60px;
-    padding-left: 87px;
     margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 585px;
     padding-top: 114px;
-    padding-left: 80px;
     margin-bottom: 82px;
   }
 
@@ -42,10 +40,20 @@
     @media (min-width: $desktop-width) {
       display: block;
       height: 694px;
-      width: 70%;
-      top: -119px;
+      width: 50%;
+      top: -125px;
       left: 50%;
     }
+  }
+}
+
+.preview__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -80,27 +88,46 @@
   }
 }
 
-.preview__nutrition-can-image {
+.preview__nutrition-can-image-light {
+  width: 280px;
+  height: 270px;
   margin-bottom: 3px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.preview__nutrition-can-image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
     width: 709px;
     height: 609px;
-    padding-top: 14px;
-    padding-bottom: 14px;
     position: absolute;
-    left: 91px;
-    top: 100px;
+    left: 0;
+    top: 263px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    left: 490px;
-    top: 10px;
+    display: none;
+  }
+}
+
+.preview__nutrition-can-image-transparent {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
     width: 552px;
     height: 499px;
+    left: 558px;
+    top: 32px;
   }
 }
 

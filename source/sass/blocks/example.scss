@@ -4,12 +4,14 @@
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic-white;
     padding-top: 43px;
+    background: linear-gradient(to bottom, $basic-white 619px, $example-background-color 619px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    padding-top: 0;
+    background: linear-gradient(to bottom, $basic-white 194px, $example-background-color 194px);
+    padding-bottom: 75px;
   }
 }
 
@@ -35,6 +37,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    margin-top: 58px;
     margin-bottom: 146px;
   }
 }
@@ -52,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 436px;
     grid-column: 1/2;
     margin-bottom: 69px;
   }
@@ -124,7 +128,7 @@
     position: absolute;
     left: 24px;
     bottom: -7px;
-    background-color: $basic-white;
+    background-color: $example-background-color;
 
     &:last-child {
       width: 142px;
@@ -147,6 +151,7 @@
     width: 174px;
     text-align: right;
     margin-left: auto;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {

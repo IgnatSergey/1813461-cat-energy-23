@@ -4,12 +4,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 10px;
     border-bottom: 1px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 11px;
+    padding-bottom: 0;
     border: 0;
   }
 }
@@ -51,6 +52,7 @@
     width: 249px;
     background-size: 80px 80px;
     background-position: 0 40px;
+    margin-bottom: 37px;
 
     &::after {
       content: "1";
@@ -62,6 +64,10 @@
       @include font-oswald(280px, 280px, 400);
       color: $basic-background;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
