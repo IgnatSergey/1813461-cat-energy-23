@@ -1,13 +1,24 @@
 .example {
   background-color: $example-background-color;
   padding-top: 27px;
-  padding-bottom: 31px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    background: linear-gradient(to bottom, $basic-white 619px, $example-background-color 619px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    background: linear-gradient(to bottom, $basic-white 194px, $example-background-color 194px);
+    padding-bottom: 75px;
+  }
 }
 
 .example__grid {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
   }
 }
@@ -19,63 +30,139 @@
   @include font-oswald(36px, 40px, 400);
 
   @media (min-width: $tablet-width) {
+    @include font-oswald(60px, 60px, 400);
     grid-column: -1/1;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    margin-top: 58px;
+    margin-bottom: 146px;
   }
 }
 
 .example__description {
   @include font-arial();
   margin: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    @include font-arial(16px, 24px, 400);
+    margin-bottom: 54px;
     grid-column: -1/1;
+    width: 700px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 436px;
     grid-column: 1/2;
+    margin-bottom: 69px;
   }
 }
 
 .example__list {
   @include non-list();
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    margin-bottom: 60px;
+  }
+}
+
+.example__item {
+  text-align: center;
+  position: relative;
+  width: 124px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border: 1px solid $border-number-color;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .example__number {
   @include font-oswald(24px, 24px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(30px, 37px, 400);
+  }
 }
 
 .example__definition {
+  margin: 0;
+
   @include font-arial(12px, 12px, 400);
+  width: 87px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  left: 18px;
+  bottom: -13px;
+  background-color: $example-background-color;
+
+  @media (min-width: $tablet-width) {
+    @include font-arial(14px, 14px, 400);
+    width: 114px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    left: 24px;
+    bottom: -7px;
+    background-color: $example-background-color;
+
+    &:last-child {
+      width: 142px;
+      left: 10px;
+    }
+  }
 }
 
 .example__expense {
   margin: 0;
-  margin-top: 25px;
   margin-bottom: 42px;
   text-align: center;
+  text-transform: uppercase;
 
   @include font-oswald(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {
+    @include font-oswald(20px, 20px, 400);
     grid-column: 2/3;
+    width: 174px;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+
+    span {
+      margin-left: 63px;
+    }
   }
 }
 
@@ -88,4 +175,18 @@
     grid-column: 2/3;
     grid-row: -1/1;
   }
+}
+
+.slider__item {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__toggles {
+  @include font-oswald(16px, 20px, 400);
 }

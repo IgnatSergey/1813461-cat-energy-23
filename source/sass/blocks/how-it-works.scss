@@ -1,6 +1,18 @@
 .how-it-works {
   padding-top: 7px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+    padding-bottom: 0;
+    border: 0;
+  }
 }
 
 .how-it-works__title {
@@ -8,6 +20,11 @@
   margin-bottom: 40px;
 
   @include font-oswald(36px, 40px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(60px, 60px, 400);
+    margin-bottom: 32px;
+  }
 }
 
 .how-it-works__list {
@@ -27,6 +44,31 @@
 
 .how-it-works__item {
   margin-bottom: 26px;
+  min-height: 60px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    width: 249px;
+    background-size: 80px 80px;
+    background-position: 0 40px;
+    margin-bottom: 37px;
+
+    &::after {
+      content: "1";
+      position: absolute;
+      top: 0;
+      left: 118px;
+      z-index: -1;
+
+      @include font-oswald(280px, 280px, 400);
+      color: $basic-background;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .how-it-works__item--nutrients {
@@ -37,16 +79,34 @@
 .how-it-works__item--flour {
   background-image: url("../../img/icon_flour.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "2";
+    }
+  }
 }
 
 .how-it-works__item--regular-meals {
   background-image: url("../../img/icon_meals.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "3";
+    }
+  }
 }
 
 .how-it-works__item--improvement {
   background-image: url("../../img/icon_improvement.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "4";
+    }
+  }
 }
 
 .how-it-works__description {
@@ -54,4 +114,11 @@
   padding-left: 80px;
 
   @include font-arial();
+
+  @media (min-width: $tablet-width) {
+    padding-top: 151px;
+    padding-left: 0;
+
+    @include font-arial(16px, 24px, 400);
+  }
 }
