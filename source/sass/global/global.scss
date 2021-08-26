@@ -36,12 +36,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    width: $tablet-width;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    width: $desktop-width;
+    width: 100%;
   }
 }
 

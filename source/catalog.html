@@ -12,12 +12,17 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__grid">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image-simple" src="img/logo_simple.svg" width="34" height="38"
-            alt="Логотип кэт энерджи">
-          <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18" alt="текст кэт энерджи">
-        </a>
-        <nav class="main-nav">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo-image-link" href="index.html">
+            <img class="page-header__logo-image-simple" src="img/logo_simple.svg" width="34" height="38"
+              alt="Логотип кэт энерджи">
+            <img class="page-header__logo-image" src="img/logo.svg" width="70" height="60" alt="Логотип кэт энерджи">
+          </a>
+          <a class="page-header__logo-text-link" href="index.html">
+            <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18" alt="текст кэт энерджи">
+          </a>
+        </div>
+        <nav class="main-nav main-nav-black main-nav--opened main-nav--noj">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -88,7 +93,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link-image" href="#">
-              <img class="catalog__image" src="img/cat_energy_pro_1000г_chiken.jpg" width="84" height="101"
+              <img class="catalog__image" src="img/cat_energy_pro_1000г_chiken.jpg" width="68" height="86"
                 alt="Желто-оранжевая баночка cat enerdgy pro, курица с питанием  для кошек">
             </a>
             <a class="catalog__link-title" href="#">
@@ -315,7 +320,7 @@
             </a>
           </li>
           <li class="catalog__item show-all">
-            <img class="show-all__image" src="img/plus.svg" width="30" height="30" alt="Значок плюс">
+            <!-- <img class="show-all__image" src="img/plus.svg" width="30" height="30" alt="Значок плюс"> -->
             <p class="show-all__description">Показать еще 100500 товаров</p>
             <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
             <a class="button show-all__button" href="#">
@@ -328,9 +333,9 @@
 
     <section class="offers">
       <div class="container">
+        <h2 class="goods-additional__main-title">Дополнительные товары</h2>
         <div class="offers__wrapper">
           <div class="goods-additional">
-            <h2 class="goods-additional__main-title">Дополнительные товары</h2>
             <ul class="goods-additional__list">
               <li class="goods-additional__item">
                 <h3 class="goods-additional__name-goods">Сахарозаменитель</h3>
@@ -400,10 +405,8 @@
           </div>
 
           <div class="offer">
-            <div class="offer__grid">
-              <img class="offer__image" src="img/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
-              <p class="offer__text">Закажите все<br> и получите чехол для кота в подарок!</p>
-            </div>
+            <img class="offer__image" src="img/icon_gift.svg" width="78" height="80" alt="Иконка подарка">
+            <p class="offer__text">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -413,8 +416,10 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="container">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
+        </div>
       </div>
       <iframe class="contacts__map"></iframe>
     </section>
@@ -428,7 +433,7 @@
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item">
+            <li class="social__item social__item-vk">
               <a class="social__link" href="#" title="Кэт энерджи в Вконтакте">
                 <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -437,7 +442,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item-inst">
               <a class="social__link" href="#" title="Кэт энерджи в Инстаграмме">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -446,7 +451,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item-fb">
               <a class="social__link" href="#" title="Кэт энерджи в Фейсбуке">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -470,6 +475,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

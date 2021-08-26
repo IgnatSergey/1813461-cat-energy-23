@@ -1,27 +1,36 @@
 .offer {
   text-align: center;
   color: $basic-white;
-  margin-top: 36px;
+  padding-top: 58px;
+  padding-bottom: 43px;
+  margin-top: 35px;
   margin-bottom: 35px;
-}
 
-.offer__grid {
   background-image: url("../../img/background_cat_offer.png");
   background-repeat: no-repeat;
-  padding-top: 58px;
-  padding-bottom: 78px;
+  background-size: cover;
+  background-position: 0 0;
 
   @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 136;
+    padding-left: 77px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+
     display: flex;
-    padding-left: 78px;
-    background-size: cover;
+    align-items: center;
     background-position: 50% 50%;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    padding-top: 55px;
+    padding-bottom: 43px;
     padding-left: 0;
-    padding-right: auto;
+    margin: 0;
+    width: 245px;
+    display: block;
+    margin-left: 80px;
   }
 }
 
@@ -29,6 +38,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -38,12 +48,12 @@
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
 .offer__text {
   margin: 0;
-  margin-top: 48px;
   width: 162px;
   margin-left: auto;
   margin-right: auto;
@@ -52,10 +62,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }

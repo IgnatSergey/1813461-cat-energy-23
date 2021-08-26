@@ -104,7 +104,15 @@
 .copyright__link-logo:active {
   opacity: 0.3;
 
-  & path {
+  path {
     fill: $basic-green;
+  }
+}
+
+.copyright__logo-icon {
+  &:hover {
+    path {
+      stroke: $basic-green;
+    }
   }
 }
