@@ -1,12 +1,17 @@
 .offers {
   padding-top: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+  }
 }
 
 .offers__wrapper {
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 245px;
-    column-gap: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 86px;
   }
 }
 
@@ -17,7 +22,32 @@
   @include font-oswald(24px, 24px, 400);
 
   @media (min-width: $tablet-width) {
+    @include font-oswald(36px, 36px, 400);
+    display: block;
+    width: 410px;
     padding-left: 38px;
+    margin-bottom: 80px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -38px;
+  }
+}
+
+.goods-additional__main-title::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  right: 0;
+  width: 16%;
+  height: 2px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 100vw;
+    top: 90px;
+    z-index: -1;
   }
 }
 
@@ -28,13 +58,32 @@
 .goods-additional__item {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid $border-number-color;
+
+  &:last-child {
+    border-bottom: 1px solid $border-number-color;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 28px;
     padding-left: 38px;
     padding-right: 38px;
+    border: 1px solid $border-number-color;
+    border-bottom: 0;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 20px;
+    padding-bottom: 21px;
   }
 }
 
@@ -45,18 +94,60 @@
 
   @include font-oswald(16px, 16px, 400);
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(20px, 20px, 400);
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 321px;
+  }
 }
 
 .goods-additional__data {
   @include font-arial(14px, 14px, 400);
   color: $special-dark-grey;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    @include font-arial(16px, 20px, 400);
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 323px;
+  }
+}
+
+.goods-additional__parameter {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 244px;
+  }
+}
+
+.goods-additional__value {
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    width: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .goods-additional .button {
-  @media (min-width: $tablet-width) {
-    width: 632px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 244px;
   }

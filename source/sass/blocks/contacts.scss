@@ -9,12 +9,23 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     padding-top: 66px;
-    padding-bottom: 51px;
+    padding-bottom: 61px;
+    padding-left: 41px;
+    padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    width: 570px;
+    background-color: $basic-white;
+    top: 95px;
+    left: 110px;
+    padding-bottom: 51px;
+    padding-right: 89px;
+    padding-left: 76px;
   }
 }
 
@@ -25,8 +36,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-oswald(20px, 27px, 400);
-    width: 171px;
-    margin-left: 41px;
+    width: 163px;
   }
 }
 
@@ -41,19 +51,26 @@
   @media (min-width: $tablet-width) {
     @include font-arial(16px, 20px, 400);
     width: 159px;
-    margin-right: 41px;
     text-align: right;
-    margin-left: auto;
 
     br {
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__map {
   width: 100%;
+  min-height: 362px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }

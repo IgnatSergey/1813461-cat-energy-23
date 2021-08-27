@@ -1,12 +1,22 @@
-.page-catalog {
-  padding-top: 27px;
-}
-
 .page-catalog__title {
   margin: 0;
-  margin-bottom: 41px;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  border-top: 1px solid $border-social-color;
+  border-bottom: 1px solid $border-social-color;
+  width: 100vw;
+  margin-left: -20px;
 
   @include font-oswald(36px, 36px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(60px, 60px, 400);
+    border: 0;
+    padding-top: 64px;
+    padding-bottom: 22px;
+    width: 100%;
+  }
 }
 
 .page-catalog .contacts {

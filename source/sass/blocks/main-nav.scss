@@ -99,6 +99,14 @@
   }
 }
 
+.main-nav-black .main-nav__item {
+  @media (min-width: $desktop-width) {
+    &--current {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}
+
 .main-nav__link {
   display: block;
   text-align: center;
@@ -110,8 +118,14 @@
 
   @include font-oswald(20px, 20px, 500);
 
-  &:active {
+  &[href]:active {
     background-color: $basic-grey;
+  }
+
+  &[href]:hover {
+    span {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -121,7 +135,7 @@
     border: 0;
     background-color: transparent;
 
-    &:active {
+    &[href]:active {
       background-color: transparent;
       opacity: 0.3;
     }
@@ -130,5 +144,11 @@
       @include font-oswald(20px, 30px, 400);
       color: $basic-white;
     }
+  }
+}
+
+.main-nav-black .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $dark-grey;
   }
 }
