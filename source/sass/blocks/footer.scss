@@ -109,10 +109,20 @@
   }
 }
 
+.social__icon,
 .copyright__logo-icon {
   &:hover {
     path {
+      fill: $basic-green;
+    }
+  }
+}
+
+.social__icon-fb {
+  &:hover {
+    path {
       stroke: $basic-green;
+      fill: none;
     }
   }
 }

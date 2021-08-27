@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
   }
@@ -29,7 +30,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 324px;
+    // width: 324px;
+    width: 45%;
     min-height: 571px;
     display: flex;
     flex-direction: column;
@@ -38,16 +40,16 @@
     padding-right: 37px;
     padding-bottom: 39px;
     border: 0;
-    margin-right: 60px;
+    // margin-right: 60px;
     background: linear-gradient(
       to bottom,
       $basic-white 141px,
       $basic-background 141px
     );
 
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+    // &:nth-child(2n) {
+    //   margin-right: 0;
+    // }
 
     &:last-child {
       background: $basic-white;
@@ -61,9 +63,27 @@
     }
   }
 
+  $number-card: 2;
+
+  // @for $i from 1 to 8 {
+  //   @if ($tablet-width + $i * 384px < $desktop-width) {
+  //     @media (min-width: $tablet-width + $i * 384px) {
+  //       &:nth-child(#{$number-card}n) {
+  //         margin-right: 60px;
+  //       }
+  //       $number-card: $number-card + 1;
+
+  //       &:nth-child(#{$number-card}n) {
+  //         margin-right: 0;
+  //       }
+  //     }
+  //   }
+  // }
+
   @media (min-width: $desktop-width) {
-    width: 245px;
-    margin-right: 80px;
+    width: 21%;
+    // width: 245px;
+    // margin-right: 80px;
     min-height: 574px;
     background: linear-gradient(
       to bottom,
@@ -71,13 +91,27 @@
       $basic-background 141px
     );
 
-    &:nth-child(2n) {
-      margin-right: 80px;
-    }
+    //   &:nth-child(1n) {
+    //     margin-right: 80px;
+    //   }
 
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    //   &:nth-child(4n) {
+    //     margin-right: 0;
+    //   }
+    // }
+
+    // $number-card: 4;
+    // @for $i from 1 to 8 {
+    //   @media (min-width: $desktop-width + $i * 325px) {
+    //     &:nth-child(#{$number-card}n) {
+    //       margin-right: 80px;
+    //     }
+    //     $number-card: $number-card + 1;
+
+    //     &:nth-child(#{$number-card}n) {
+    //       margin-right: 0;
+    //     }
+    //   }
   }
 }
 

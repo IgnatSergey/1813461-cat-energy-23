@@ -97,6 +97,18 @@
       padding-left: 30px;
     }
   }
+
+  &:nth-child(3) {
+    margin-top: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 75px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
 }
 
 .program-selection__fieldset--stretched {
@@ -177,7 +189,7 @@
 
   @media (min-width: $desktop-width) {
     &:last-child {
-      margin-bottom: 68px;
+      // margin-bottom: 68px;
     }
   }
 }
@@ -243,7 +255,7 @@
 
 .program-selection__input:focus + .program-selection__input-phone-icon {
   path {
-    stroke: $basic-green;
+    fill: $basic-green;
   }
 }
 
@@ -322,7 +334,7 @@
   content: "";
   position: absolute;
   left: -36px;
-  top: 1px;
+  top: 2px;
   width: 14px;
   height: 14px;
   background-color: $basic-green;
