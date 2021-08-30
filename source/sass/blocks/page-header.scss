@@ -48,23 +48,16 @@
   }
 }
 
-.page-header__logo-image-simple {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .page-header__logo-image {
-  display: none;
-
   @media (min-width: $tablet-width) {
-    display: block;
-    position: static;
+    width: 60px;
+    height: 50px;
     margin-right: 12px;
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
+    height: 60px;
     margin-right: 14px;
   }
 }

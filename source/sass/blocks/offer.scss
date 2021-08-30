@@ -6,10 +6,14 @@
   margin-top: 35px;
   margin-bottom: 35px;
 
-  background-image: url("../../img/background_cat_offer.png");
+  background-image: url("../../img/background_cat_offer_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background_cat_offer_mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
@@ -20,7 +24,7 @@
 
     display: flex;
     align-items: center;
-    background-position: 50% 50%;
+    background-position: 50% -320px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +35,7 @@
     width: 245px;
     display: block;
     margin-left: 80px;
+    background-position: 50% 0;
   }
 }
 
