@@ -2,6 +2,8 @@
   background-color: $example-background-color;
   padding-top: 27px;
   padding-bottom: 39px;
+  position: relative;
+  min-height: 705px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
@@ -211,7 +213,43 @@
 }
 
 .slider__toggles {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translate(-50%, 0);
+}
+
+.slider__toggle-name {
   text-transform: uppercase;
+  margin: 0;
 
   @include font-oswald(16px, 20px, 400);
+}
+
+.slider__toggle-wrapper {
+  width: 84px;
+  background-color: $basic-white;
+  margin-right: 19px;
+  margin-left: 19px;
+  padding: 4px 6px;
+  border: 1px solid $border-number-color;
+  border-radius: 6px;
+  display: flex;
+}
+
+.slider__toggle {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  border: 0;
+  display: none;
+}
+
+.slider__toggle--current {
+  display: block;
 }
