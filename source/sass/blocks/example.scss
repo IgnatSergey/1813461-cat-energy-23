@@ -137,12 +137,16 @@
     position: absolute;
     left: 24px;
     bottom: -7px;
-    background-color: $example-background-color;
+    background-color: $basic-white;
 
     &:last-child {
       width: 142px;
       left: 10px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $example-background-color;
   }
 }
 
@@ -260,15 +264,15 @@
 .slider__toggle {
   width: 35px;
   height: 6px;
-  background-color: $basic-green;
+  background-color: $basic-white;
   border-radius: 6px;
   border: 0;
-  display: none;
   position: relative;
 }
 
 .slider__toggle--current {
   display: block;
+  background-color: $basic-green;
 }
 
 .slider__scale-wrapper {

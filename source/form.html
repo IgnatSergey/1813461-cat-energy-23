@@ -16,20 +16,16 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__grid">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo-image-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo_desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-              <img class="page-header__logo-image" src="img/logo_mobile.svg" width="34" height="38"
-                alt="Логотип кэт энерджи">
-            </picture>
-          </a>
-          <a class="page-header__logo-text-link" href="index.html">
-            <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18" alt="текст кэт энерджи">
-          </a>
-        </div>
-        <nav class="main-nav main-nav-black main-nav--opened main-nav--noj">
+        <a class="page-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
+            <img class="page-header__logo-image" src="img/logo_mobile.svg" width="34" height="38"
+              alt="Логотип кэт энерджи">
+          </picture>
+          <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18" alt="текст кэт энерджи">
+        </a>
+        <nav class="main-nav main-nav-black main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -232,8 +228,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</p>
             <svg class="copyright__logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -245,23 +241,7 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

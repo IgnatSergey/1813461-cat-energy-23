@@ -72,14 +72,16 @@
   position: absolute;
   width: 100vw;
   left: 0;
-  top: 65px;
+  top: 64px;
   z-index: 10;
+  border-top: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
     width: 540px;
     justify-content: flex-end;
+    border-top: 0;
   }
 }
 
@@ -114,7 +116,7 @@
   padding-bottom: 24px;
   background-color: $basic-white;
   text-transform: uppercase;
-  border: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
 
   @include font-oswald(20px, 20px, 500);
 
