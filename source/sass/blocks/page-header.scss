@@ -24,10 +24,12 @@
 }
 
 .page-header__logo-link {
-  width: 190px;
+  display: block;
   min-height: 65px;
-  display: flex;
-  align-items: center;
+  width: 191px;
+  padding-top: 11px;
+  // display: flex;
+  // align-items: center;
 
   &[href]:hover {
     opacity: 0.8;
@@ -39,19 +41,19 @@
 }
 
 .page-header__logo-image {
-  margin-right: 57px;
+  // margin-right: 57px;
 
   @media (min-width: $tablet-width) {
-    position: static;
-    width: 60px;
-    height: 50px;
-    margin-right: 12px;
+    // position: static;
+    width: 174px;
+    height: 52px;
+    // margin-right: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
+    width: 202px;
     height: 60px;
-    margin-right: 14px;
+    // margin-right: 14px;
   }
 }
 
