@@ -62,7 +62,7 @@
   }
 }
 
-.social__item:active {
+.social__link:active {
   opacity: 0.3;
 }
 
@@ -86,7 +86,7 @@
     padding: 0;
   }
 
-  &:hover .copyright__logo-icon path {
+  &:hover .copyright__logo-icon {
     fill: $basic-green;
   }
 
@@ -104,17 +104,26 @@
   }
 }
 
-.copyright__link-logo:active {
-  path {
+.social__icon-vk,
+.social__icon-inst {
+  fill: $icon-color;
+
+  &:hover {
     fill: $basic-green;
   }
 }
 
-.social__icon {
+.social__icon-fb {
+  stroke: $icon-color;
+  fill: none;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+
   &:hover {
-    path {
-      fill: $basic-green;
-    }
+    stroke: $basic-green;
   }
 }
 
@@ -132,16 +141,6 @@
   }
 }
 
-.social__icon-fb {
-  @media (min-width: $tablet-width) {
-    width: 28px;
-    height: 33px;
-  }
-
-  &:hover {
-    path {
-      stroke: $basic-green;
-      fill: none;
-    }
-  }
+.copyright__logo-icon {
+  fill: $icon-color;
 }

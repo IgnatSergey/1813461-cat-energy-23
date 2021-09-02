@@ -186,12 +186,6 @@
       margin-bottom: 65px;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    &:last-child {
-      // margin-bottom: 68px;
-    }
-  }
 }
 
 .program-selection__label {
@@ -228,6 +222,8 @@
 .program-selection__input-email-icon {
   position: absolute;
   right: 15px;
+  fill: none;
+  stroke: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     right: 20px;
@@ -235,18 +231,13 @@
 }
 
 .program-selection__input:focus + .program-selection__input-email-icon {
-  path {
-    stroke: $basic-green;
-  }
-
-  line {
-    stroke: $basic-green;
-  }
+  stroke: $basic-green;
 }
 
 .program-selection__input-phone-icon {
   position: absolute;
   right: 15px;
+  fill: $basic-black;
 
   @media (min-width: $tablet-width) {
     right: 17px;
@@ -254,9 +245,7 @@
 }
 
 .program-selection__input:focus + .program-selection__input-phone-icon {
-  path {
-    fill: $basic-green;
-  }
+  fill: $basic-green;
 }
 
 .program-selection__type-program-list,
