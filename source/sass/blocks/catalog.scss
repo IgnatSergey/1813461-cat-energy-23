@@ -6,13 +6,12 @@
     flex-wrap: wrap;
     align-items: flex-end;
     margin-left: -30px;
-    width: 98vw;
+    margin-right: -30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -110px;
-    padding-left: 70px;
-    margin-right: 0;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
@@ -46,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 22.57vw;
+    width: 25%;
     padding-left: 40px;
     padding-right: 40px;
   }

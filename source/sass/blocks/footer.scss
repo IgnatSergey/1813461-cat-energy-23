@@ -16,8 +16,17 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
+  display: block;
   margin-bottom: 32px;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

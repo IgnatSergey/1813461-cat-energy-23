@@ -206,6 +206,7 @@
   flex-grow: 1;
   height: 45px;
   border: 1px solid $border-light-grey;
+  border-radius: 0;
 
   @media (min-width: $tablet-width) {
     @include font-oswald(20px, 30px, 400);
@@ -216,6 +217,20 @@
 
   &:hover {
     border: 1px solid $border-number-color;
+  }
+
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid $dark-grey;
+  }
+}
+
+.program-selection__input-email {
+  &:focus {
+    &:invalid {
+      border: 1px solid $error-color;
+    }
   }
 }
 
@@ -234,6 +249,10 @@
   stroke: $basic-green;
 }
 
+.program-selection__input:focus:invalid + .program-selection__input-email-icon {
+  stroke: $error-color;
+}
+
 .program-selection__input-phone-icon {
   position: absolute;
   right: 15px;
@@ -246,6 +265,10 @@
 
 .program-selection__input:focus + .program-selection__input-phone-icon {
   fill: $basic-green;
+}
+
+.program-selection__input:focus:invalid + .program-selection__input-phone-icon {
+  fill: $error-color;
 }
 
 .program-selection__type-program-list,
@@ -364,6 +387,17 @@
   border: 1px solid $border-light-grey;
   min-height: 150px;
   margin-bottom: 23px;
+  border-radius: 0;
+
+  &:hover {
+    border: 1px solid $border-number-color;
+  }
+
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid $dark-grey;
+  }
 
   &::placeholder {
     text-align: center;
@@ -477,6 +511,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1/1;
   }
 }
 

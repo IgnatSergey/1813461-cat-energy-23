@@ -141,7 +141,7 @@
             <div class="program-selection__owner-data-grid">
               <div class="program-selection__input-container">
                 <label class="program-selection__label" for="owner-email">E-mail:*</label>
-                <input class="program-selection__input" id="owner-email" type="email" name="email"
+                <input class="program-selection__input program-selection__input-email" id="owner-email" type="email" name="email"
                   placeholder="kuklachev@gmail.com" required />
                 <svg class="program-selection__input-email-icon" width="19" height="14">
                   <use xlink:href="#icon-email"></use>
@@ -188,7 +188,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="program-selection__button-wrapper program-selection__fieldset--stretched">
+          <div class="program-selection__button-wrapper">
             <button class="button" type="submit">Отправить заявку</button>
             <p class="program-selection__note">* — Обязательные поля</p>
           </div>
@@ -212,9 +212,9 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__grid">
-        <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
           <img class="page-footer__logo-text" src="img/logo_text.svg" width="128" height="24" alt="Логотип кэт энерджи">
-        </div>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item social__item-vk">
