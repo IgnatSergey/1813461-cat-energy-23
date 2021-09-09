@@ -1,0 +1,138 @@
+.slider__image-before {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
+    margin-top: 0;
+    margin-right: -50px;
+  }
+}
+
+.slider__image-after {
+  width: 251px;
+  height: 240px;
+}
+
+.slider__item {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-right: -42px;
+  }
+}
+
+.slider__item--current {
+  display: block;
+}
+
+.slider__toggles {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 60%;
+  }
+}
+
+.slider__toggle-name {
+  text-transform: uppercase;
+  margin: 0;
+
+  @include font-oswald(16px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(20px, 30px, 400);
+  }
+}
+
+.slider__toggle-wrapper {
+  box-sizing: border-box;
+  width: 84px;
+  background-color: $basic-white;
+  margin-right: 19px;
+  margin-left: 19px;
+  padding: 4px 6px;
+  border: 1px solid $border-number-color;
+  border-radius: 6px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-white;
+  border-radius: 6px;
+  border: 0;
+  position: relative;
+}
+
+.slider__toggle--current {
+  display: block;
+  background-color: $basic-green;
+}
+
+.slider__scale-wrapper {
+  display: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 468px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+}
+
+.slider__scale {
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    background-color: $scale-color;
+    border-radius: 6px;
+  }
+}
+
+.slider__toggle-scale {
+  display: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 46%;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 13px solid #ffffff;
+    background-color: $basic-green;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    cursor: pointer;
+  }
+}

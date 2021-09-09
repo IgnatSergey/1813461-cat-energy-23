@@ -51,6 +51,8 @@
 }
 
 .program-selection__form {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     padding-left: 39px;
     padding-right: 37px;
@@ -71,6 +73,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 
   &:nth-child(1),
   &:nth-child(2) {
@@ -102,11 +105,23 @@
     margin-top: 26px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 75px;
+      margin-top: 68px;
+
+      br {
+        display: none;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 0;
+      margin-top: 10px;
+    }
+  }
+
+  &:nth-child(5) {
+    .program-selection__legend {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 62px;
+      }
     }
   }
 }
@@ -155,7 +170,7 @@
 
     &::after {
       top: 20px;
-      left: -60px;
+      left: -30px;
       width: 100vw;
     }
   }
@@ -195,11 +210,13 @@
 
   @media (min-width: $tablet-width) {
     @include font-oswald(20px, 30px, 400);
+    margin-right: 11px;
   }
 }
 
 .program-selection__input {
   @include font-oswald(16px, 18px, 400);
+  box-sizing: border-box;
   text-transform: uppercase;
   margin-left: 12px;
   padding-left: 15px;
@@ -251,6 +268,10 @@
 
 .program-selection__input:focus:invalid + .program-selection__input-email-icon {
   stroke: $error-color;
+}
+
+.program-selection__input-phone {
+  padding-left: 10px;
 }
 
 .program-selection__input-phone-icon {
@@ -388,6 +409,7 @@
   min-height: 150px;
   margin-bottom: 23px;
   border-radius: 0;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $border-number-color;
@@ -422,6 +444,7 @@
 .program-selection__addition-item {
   margin-bottom: 25px;
   padding-left: 46px;
+  box-sizing: border-box;
 
   &:last-child {
     margin-bottom: 41px;
@@ -440,11 +463,11 @@
 
   @media (min-width: $desktop-width) {
     width: 240px;
-    margin-right: 80px;
+    margin-right: 84px;
     margin-bottom: 66px;
 
     &:nth-child(2n) {
-      margin-right: 80px;
+      margin-right: 84px;
     }
 
     &:nth-child(4n) {
@@ -527,6 +550,8 @@
     margin-top: 17px;
     margin-right: 60px;
     margin-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -543,5 +568,6 @@
 
   @media (min-width: $tablet-width) {
     @include font-arial(16px, 16px, 400);
+    padding-top: 10px;
   }
 }

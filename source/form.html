@@ -17,24 +17,28 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__grid">
-        <a class="page-header__logo-link" href="index.html">
+        <a class="page-header__logo-link" href="index.html" title="Кэт энерджи">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo_desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-            <img class="page-header__logo-image" src="img/logo_mobile.svg" width="191" height="37"
+            <img class="page-header__logo-image" src="img/logo_mobile.svg" width="33" height="37"
               alt="Логотип кэт энерджи">
           </picture>
+        </a>
+        <a class="page-header__logo-text-link" href="index.html">
+          <img class="page-header__logo-text" src="img/logo_text.svg" width="101" height="18"
+            alt="Логотип кэт энерджи">
         </a>
         <nav class="main-nav main-nav-black main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
+              <a class="main-nav__link" href="index.html" title="Перейти на главную">
                 <span>Главная</span>
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link" href="catalog.html" title="Перейти в каталог">
                 <span>Каталог продукции</span>
               </a>
             </li>
@@ -94,20 +98,21 @@
           </fieldset>
           <fieldset
             class="program-selection__fieldset program-selection__fieldset-contacts program-selection__fieldset--stretched">
-            <legend class="program-selection__legend program-selection__legend--line">Контактные данные<br>(владельца
+            <legend class="program-selection__legend program-selection__legend--line">Контактные
+              данные<br>&nbsp;(владельца
               кота)</legend>
             <div class="program-selection__owner-data-grid">
               <div class="program-selection__input-container">
                 <label class="program-selection__label" for="owner-email">E-mail:*</label>
-                <input class="program-selection__input program-selection__input-email" id="owner-email" type="email" name="email"
-                  placeholder="kuklachev@gmail.com" required />
+                <input class="program-selection__input program-selection__input-email" id="owner-email" type="email"
+                  name="email" placeholder="kuklachev@gmail.com" required />
                 <svg class="program-selection__input-email-icon" width="19" height="14">
                   <use xlink:href="img/sprite.svg#icon_email"></use>
                 </svg>
               </div>
               <div class="program-selection__input-container">
                 <label class="program-selection__label" for="owner-phone">Телефон:*</label>
-                <input class="program-selection__input" id="owner-phone" type="tel" name="phone"
+                <input class="program-selection__input program-selection__input-phone" id="owner-phone" type="tel" name="phone"
                   placeholder="8 (960) 900-60-90" required />
                 <svg class="program-selection__input-phone-icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon_phone"></use>
@@ -159,12 +164,16 @@
       <div class="container">
         <div class="contacts__wrapper">
           <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
+          <div class="contacts__address-wrapper">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-empty-line"></p>
+            <p class="contacts__address"> Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.620573321157!2d30.32206368930138!3d59.93641137950462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631014186113!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
   </main>
@@ -172,7 +181,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__grid">
-        <a class="page-footer__logo-link" href="index.html">
+        <a class="page-footer__logo-link" href="index.html" title="Кэт энерджи">
           <img class="page-footer__logo-text" src="img/logo_text.svg" width="128" height="24" alt="Логотип кэт энерджи">
         </a>
         <div class="page-footer__social social">
@@ -201,8 +210,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html academy">
+            <p class="copyright__link-text">HTML Academy</p>
             <svg class="copyright__logo-icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#icon_academy"></use>
             </svg>
