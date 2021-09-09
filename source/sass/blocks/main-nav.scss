@@ -59,7 +59,7 @@
 
   &::before {
     transform: rotate(45deg);
-    box-shadow: 0;
+    box-shadow: none;
   }
 
   &::after {
@@ -79,7 +79,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    width: 540px;
+    width: 530px;
     justify-content: flex-end;
     border-top: 0;
   }
@@ -87,7 +87,7 @@
 
 .main-nav__item {
   @media (min-width: $tablet-width) {
-    margin-left: 34px;
+    margin-left: 36px;
 
     &--current {
       border-bottom: 2px solid $basic-green;
@@ -101,11 +101,9 @@
   }
 }
 
-.main-nav-black .main-nav__item {
+.main-nav-black .main-nav__item--current {
   @media (min-width: $desktop-width) {
-    &--current {
-      border-bottom: 2px solid $basic-green;
-    }
+    border-bottom: 2px solid $basic-green;
   }
 }
 

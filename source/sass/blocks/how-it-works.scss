@@ -3,7 +3,7 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 17px;
     padding-bottom: 10px;
     border-bottom: 1px solid $basic-grey;
   }
@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 11px;
     padding-bottom: 0;
+    padding-top: 42px;
     border: 0;
   }
 }
@@ -38,27 +39,45 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 80px;
+    grid-column-gap: 76px;
   }
 }
 
 .how-it-works__item {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   min-height: 60px;
   position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-position: bottom 15px left 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      background-position: bottom 24px left 27px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
     width: 249px;
-    background-size: 80px 80px;
-    background-position: 0 40px;
     margin-bottom: 37px;
 
     &::after {
       content: "1";
       position: absolute;
       top: 0;
-      left: 118px;
+      left: 115px;
       z-index: -1;
 
       @include font-oswald(280px, 280px, 400);
@@ -72,13 +91,17 @@
 }
 
 .how-it-works__item--nutrients {
-  background-image: url("../../img/icon_nutrients.svg");
-  background-repeat: no-repeat;
+  &::before {
+    background-image: url("../../img/icon_nutrients.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .how-it-works__item--flour {
-  background-image: url("../../img/icon_flour.svg");
-  background-repeat: no-repeat;
+  &::before {
+    background-image: url("../../img/icon_flour.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -88,8 +111,10 @@
 }
 
 .how-it-works__item--regular-meals {
-  background-image: url("../../img/icon_meals.svg");
-  background-repeat: no-repeat;
+  &::before {
+    background-image: url("../../img/icon_meals.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -99,8 +124,10 @@
 }
 
 .how-it-works__item--improvement {
-  background-image: url("../../img/icon_improvement.svg");
-  background-repeat: no-repeat;
+  &::before {
+    background-image: url("../../img/icon_improvement.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -120,5 +147,13 @@
     padding-left: 0;
 
     @include font-arial(16px, 24px, 400);
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

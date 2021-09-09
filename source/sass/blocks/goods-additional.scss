@@ -1,64 +1,12 @@
-.offers {
-  padding-top: 25px;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 68px;
-  }
-}
-
-.offers__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 86px;
-  }
-}
-
-.offers__main-title {
-  margin: 0;
-  margin-bottom: 36px;
-
-  @include font-oswald(24px, 24px, 400);
-
-  @media (min-width: $tablet-width) {
-    @include font-oswald(36px, 36px, 400);
-    display: block;
-    width: 410px;
-    padding-left: 38px;
-    margin-bottom: 80px;
-    background-color: $basic-white;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -38px;
-  }
-}
-
-.offers__main-title::after {
-  content: "";
-  position: absolute;
-  top: 38px;
-  right: 0;
-  width: 16%;
-  height: 2px;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    width: 100vw;
-    top: 90px;
-    z-index: -1;
-  }
-}
-
 .goods-additional__list {
   @include non-list();
 }
 
 .goods-additional__item {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-top: 1px solid $border-number-color;
+  box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid $border-number-color;
@@ -69,7 +17,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 26px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     padding-left: 38px;
     padding-right: 38px;
     border: 1px solid $border-number-color;
@@ -82,8 +30,12 @@
     padding-right: 0;
     border-left: 0;
     border-right: 0;
-    padding-top: 20px;
-    padding-bottom: 21px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  span {
+    text-transform: uppercase;
   }
 }
 
@@ -131,7 +83,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    width: 244px;
+    width: 300px;
   }
 }
 

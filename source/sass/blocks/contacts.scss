@@ -5,16 +5,17 @@
 .contacts__wrapper {
   padding-top: 28px;
   padding-bottom: 26px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 66px;
-    padding-bottom: 61px;
+    padding-top: 65px;
+    padding-bottom: 55px;
     padding-left: 41px;
-    padding-right: 42px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,8 +36,32 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald(20px, 27px, 400);
+    @include font-oswald(20px, 26px, 400);
     width: 163px;
+  }
+}
+
+.contacts__address-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts__address-empty-line {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -44,22 +69,8 @@
   @include font-arial(14px, 20px, 400);
   margin: 0;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     @include font-arial(16px, 20px, 400);
-    width: 159px;
-    text-align: right;
-
-    br {
-      display: block;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
   }
 }
 
@@ -69,8 +80,31 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 0;
+  background-color: $border-hover;
+  background-image: url("../../img/location_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/location_mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    background-image: url("../../img/location_table.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/location_table@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100vw;
+    background-image: url("../../img/location_desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/location_desktop@2x.png");
+    }
   }
 }

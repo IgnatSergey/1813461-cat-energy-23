@@ -1,0 +1,40 @@
+.page-footer {
+  background-color: $basic-background;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 62px;
+  }
+}
+
+.page-footer__grid {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo-link {
+  display: block;
+  margin-bottom: 32px;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 19px;
+  }
+}
+
+.page-footer__logo-text {
+  margin-left: auto;
+  margin-right: auto;
+}
