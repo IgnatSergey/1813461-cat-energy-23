@@ -243,6 +243,15 @@
   }
 }
 
+.program-selection__input[type="number"]::-webkit-outer-spin-button,
+.program-selection__input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.program-selection__input[type="number"] {
+  appearance: textfield;
+}
+
 .program-selection__input-email {
   &:focus {
     &:invalid {

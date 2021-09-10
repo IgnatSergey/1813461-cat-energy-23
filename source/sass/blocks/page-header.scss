@@ -13,8 +13,10 @@
 .page-header__grid {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 13px;
     align-items: flex-end;
